@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>For Her</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Noto Sans SC",sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+
+height:100vh;
+
+background:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600") center/cover;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.45);
+
+backdrop-filter:blur(2px);
+
+}
+
+.content{
+
+position:relative;
+
+z-index:2;
+
+}
+
+h1{
+
+font-size:60px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+p{
+
+font-size:22px;
+
+opacity:.9;
+
+}
+
+.scroll{
+
+margin-top:60px;
+
+font-size:35px;
+
+animation:updown 2s infinite;
+
+}
+
+@keyframes updown{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(10px);}
+
+100%{transform:translateY(0);}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="content">
+
+<h1>For Her</h1>
+
+<p>有些人，只是出现，就足够惊艳整个青春。</p>
+
+<div class="scroll">↓</div>
+
+</div>
+
+</section>
+
+</body>
+
+  </html>
